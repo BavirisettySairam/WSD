@@ -1,0 +1,8 @@
+<!DOCTYPE store [
+    <!ELEMENT store (#PCDATA)>
+]>
+<store>
+    <products>
+        
+    </products>
+</store>

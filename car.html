@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30vh;
+}
+
+.icon {
+    position: absolute;
+    border-radius: 50%;
+    animation: carousel 3s infinite ease-in-out;
+}
+
+.one {
+  filter: hue-rotate(180deg);
+}
+
+.two {
+  filter: hue-rotate(90deg);
+  animation-delay: -1s;
+}
+
+.three {
+  filter: hue-rotate(25deg);
+    animation-delay: -2s;
+}
+
+@keyframes carousel {
+    0% {
+        transform: translate(-320px);
+        scale: 50%;
+        z-index: -1;
+    }
+
+    33% {
+        transform: translate(0px);
+        scale: 100%;
+        z-index: 1;
+    }
+
+    66% {
+        transform: translate(320px);
+        scale: 50%;
+        z-index: -1;
+    }
+
+    100% {
+        transform: translate(-320px);
+        scale: 50%;
+        z-index: -1;
+    }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="icon one" src="https://cdn-icons-png.flaticon.com/256/13408/13408812.png">
+    <img class="icon two" src="https://cdn-icons-png.flaticon.com/256/13408/13408812.png">
+    <img class="icon three" src="https://cdn-icons-png.flaticon.com/256/13408/13408812.png">
+  </div>  
+</body>
+</html>

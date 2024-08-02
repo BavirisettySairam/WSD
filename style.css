@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(20,20,20);
+}
+
+.carasoul
+{
+    display: flex;
+    border-radius: 10px;
+    border: white;
+}
+
+.item
+{
+    margin: 30px;
+    transition: 500ms;
+}
+
+.item:hover
+{
+    transform: scale(1.1);
+}
+
+.item img
+{
+    object-fit: cover;
+    border-radius: 30px;
+}
